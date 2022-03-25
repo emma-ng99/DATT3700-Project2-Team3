@@ -28,14 +28,11 @@ void settings() {
   size(400, 400);
 }
 
-//Change name "Processing"
-//Change every "connect" topic to connect1(if player1)/connect2 (if player2)/connect3 (if player3)
-//Change every "player" topic to player1/player2/player3
+//Change name "Processing_Player1" to another unique name
 
 void setup() {
   client = new MQTTClient(this);
-  client.connect(server, "Processing");
-  client.subscribe("M2MQTT_Unity/player1/W");
+  client.connect(server, "Processing_Player1");
   client.subscribe("M2MQTT_Unity/connect1");
 }
 
