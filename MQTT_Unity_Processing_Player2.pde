@@ -28,7 +28,7 @@ void settings() {
   size(400, 400);
 }
 
-//Change name "Processing_Player1" to another unique name
+//Change name "Processing_Player2" to another unique name
 
 void setup() {
   client = new MQTTClient(this);
