@@ -44,8 +44,7 @@ void draw() {
 void keyPressed(){
   if (keyPressed) {
     if (key == 'w' || key == 'W') {
-      client.publish("M2MQTT_Unity/player1/W", str('1'));
-      
+      client.publish("M2MQTT_Unity/player1/W", str('1')); 
     }
     
     if (key == 's' || key == 'S') {
@@ -54,7 +53,6 @@ void keyPressed(){
     
     if (key == 'a' || key == 'A') {
       client.publish("M2MQTT_Unity/player1/A", str('1'));
-
     }
     
     if (key == 'd' || key == 'D') {
